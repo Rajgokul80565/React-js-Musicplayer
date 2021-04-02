@@ -14,11 +14,8 @@ export default function Player() {
     }
 
     return (
-        
             <button onClick={changeButtonState}  className="pauseButton"> 
-
             <img src={buttonState ? pause : play}/>
-
 
             </button> 
           

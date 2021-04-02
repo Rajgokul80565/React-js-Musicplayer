@@ -1,9 +1,9 @@
 import React from 'react'
 import '../App.css';
-import song1 from '../images/song 1.jpg';
+import song1 from '../images/spidey.jpeg';
 import Player from './Player';
 
-export default function Songcontainer() {
+export default function Songcontainer(props) {
     return (
             <div className = "main-container">
              <div>
@@ -11,7 +11,7 @@ export default function Songcontainer() {
               </div>
               <div>
                  <h1>Song name here ...</h1>
-                      <p>artist ft.. song</p>
+                      <p>{props.nextSong.title}</p>
                       <progress value="32" max="100" ></progress>
               </div>
               <Player/>

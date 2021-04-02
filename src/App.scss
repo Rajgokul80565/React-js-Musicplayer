@@ -6,12 +6,16 @@
     box-sizing: border-box;
 }
 
+html,body{
+    overflow-x: hidden;
+}
+
 .App{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: $mainBackgroundColor;
+    background-color: #E7AB33;;
     height:100vh;
     
 }
@@ -20,4 +24,20 @@
     width: 200px;
     height: 200px;
 }
+.main-container{
+   
+  
+    padding: 50px;
+    border-radius: 50px;
+    background: rgba(250, 247, 247, 0.349);
+    backdrop-filter: saturate(115%) blur(50px);
+    
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .main-container {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+    }
+  }
 
