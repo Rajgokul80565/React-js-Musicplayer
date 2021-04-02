@@ -1,3 +1,5 @@
+@import './css/colors';
+
 *{
     padding: 0;
     margin: 0;
@@ -9,7 +11,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #ffefcf ;
+    background-image: $mainBackgroundColor;
     height:100vh;
     
 }
@@ -18,3 +20,4 @@
     width: 200px;
     height: 200px;
 }
+

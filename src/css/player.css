@@ -1,0 +1,61 @@
+.player-Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #FFEFCF;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.pauseButton {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  width: 55px;
+  margin: 0px;
+  height: 55px;
+  border-radius: 50px;
+  text-align: center;
+  -webkit-box-shadow: 2px 2px 3px #6b5a5a;
+          box-shadow: 2px 2px 3px #6b5a5a;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #D8AC9C;
+}
+
+.pauseButton img {
+  width: 20px;
+  height: 20px;
+}
+
+.forward-Btn {
+  width: 0x;
+  height: 0px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  border-style: solid;
+  border-width: 20px 0px 20px 30px;
+  border-color: #FFEFCF #FFEFCF #FFEFCF #D8AC9C;
+}
+
+.backward-btn {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 30px 20px 0px;
+  outline: none;
+  border-color: #FFEFCF  #D8AC9C #FFEFCF blue;
+}
+/*# sourceMappingURL=player.css.map */

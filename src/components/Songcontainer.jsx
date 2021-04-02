@@ -1,8 +1,7 @@
 import React from 'react'
 import '../App.css';
 import song1 from '../images/song 1.jpg';
-import PauseButton from '../components/PauseButton';
-import ForwardBtn from '../components/ForwardBtn';
+import Player from './Player';
 
 export default function Songcontainer() {
     return (
@@ -15,8 +14,7 @@ export default function Songcontainer() {
                       <p>artist ft.. song</p>
                       <progress value="32" max="100" ></progress>
               </div>
-              <PauseButton/>
-              <ForwardBtn />
+              <Player/>
               </div>
       
     )

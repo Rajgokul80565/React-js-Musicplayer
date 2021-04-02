@@ -1,9 +1,10 @@
 import React from 'react'
+import '../css/player.css'
 
 export default function BackwardBtn() {
     return (
-        <div>
+        
             <button className= "backward-btn" ></button>
-        </div>
+        
     )
 }

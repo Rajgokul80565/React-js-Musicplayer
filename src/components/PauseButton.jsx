@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import '../css/pause.css';
+import '../css/player.css';
 
 export default function Player() {
     
@@ -14,7 +14,7 @@ export default function Player() {
     }
 
     return (
-        <div className="pause">
+        
             <button onClick={changeButtonState}  className="pauseButton"> 
 
             <img src={buttonState ? pause : play}/>
@@ -22,6 +22,6 @@ export default function Player() {
 
             </button> 
           
-        </div>
+       
     )
 }
