@@ -40,28 +40,26 @@
     */
 }
 
-.song1 {
-  background: url(../images/spidey.jpeg) no-repeat 20% 20%;
-  background-size: cover;
+/*.song1{
+    background: url(../images/spidey.jpeg) no-repeat 20% 20%;
+    background-size: cover;
+}
+.song2{
+    background: url(../images/bunny.jpg) no-repeat 20% 20%;
+    background-size:cover;
+}
+.song3{
+    background: url(../images/bee.jpeg) no-repeat 20% 20%;
+    background-size:cover;
+}
+.song4{
+    background: url(../images/sun.jpg) no-repeat 20% 20%;
+    background-size:cover;
+}
+.song5{
+    background: url(../images/spidey.jpeg) no-repeat 20% 20%;
+    background-size:cover;
 }
 
-.song2 {
-  background: url(../images/bunny.jpg) no-repeat 20% 20%;
-  background-size: cover;
-}
-
-.song3 {
-  background: url(../images/bee.jpeg) no-repeat 20% 20%;
-  background-size: cover;
-}
-
-.song4 {
-  background: url(../images/sun.jpg) no-repeat 20% 20%;
-  background-size: cover;
-}
-
-.song5 {
-  background: url(../images/spidey.jpeg) no-repeat 20% 20%;
-  background-size: cover;
-}
+*/
 /*# sourceMappingURL=songs.css.map */
