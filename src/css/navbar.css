@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+/*linear-gradient(to bottom right,#fff,#eac8af,#fff) ;*/
+.Navbar {
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #E7AB33;
+}
+
+.Navbar .leftside {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 30px;
+  justify-self: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Navbar .leftside a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: #1b1b1b;
+}
+
+.Navbar .leftside a:hover {
+  color: #463a3a;
+}
+
+.Navbar .rightside {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+}
+
+.Navbar .rightside .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
+  padding-right: 30px;
+}
+
+.Navbar .rightside .links a {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+  margin-left: auto;
+  color: #000;
+}
+
+.Navbar .rightside .links a:hover {
+  color: #473c3c;
+}
+
+.Navbar .rightside .links #hidden {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Navbar button {
+  display: none;
+}
+
+@media only screen and (max-width: 678px) {
+  .Navbar .rightside .links {
+    display: none;
+  }
+  .Navbar button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 40px;
+    background-color: #E7AB33;
+    border: none;
+    outline: none;
+    margin-right: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+  }
+  .burgerMenu {
+    width: 35px;
+    height: auto;
+  }
+  .Navbar .rightside #hidden {
+    position: absolute;
+    left: 0%;
+    top: 50px;
+    min-height: 100%;
+    padding: 0;
+    width: 100%;
+    background-color: #ecb439;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    place-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .Navbar .rightside #hidden a {
+    font-size: 20px !important;
+  }
+}
+/*# sourceMappingURL=navbar.css.map */

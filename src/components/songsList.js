@@ -1,7 +1,6 @@
 
 import bunny from '../images/bunny.jpg';
 import spidey from '../images/spidey.jpeg';
-import bee from '../images/bee.jpeg'
 import music1 from '../music/Enjoy Enjaami.mp3';
 import music2 from '../music/godzilla.mp3'
 import  music3 from '../music/Way_Out.mp3';
