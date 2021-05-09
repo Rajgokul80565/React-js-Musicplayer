@@ -1,0 +1,96 @@
+@import './colors';
+#contact{
+    background-color: $mainBackgroundColor;
+     height:100vh;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     /*0.8fr 0.8fr; */
+     grid-gap:50px;
+     justify-content: center;
+     align-items: center;
+     .contact-input{
+         display:grid;
+         flex-direction: column;
+         align-items: center;
+         padding-left: 150px;
+        p{
+            line-height: 27px;
+            margin-top: 20px;
+            color: rgb(37, 36, 36)
+        }
+         input{
+             width:100%;
+             background-color:$mainBackgroundColor;
+             border-top: none;
+             border-left: none;
+             border-right: none;
+             border-bottom: 1.5px solid;
+             padding: 6px;
+             margin-top: 20px;
+             margin-bottom: 29px;
+             outline: none;
+             color:rgb(107, 102, 102);
+             
+             
+            
+         }
+         input::placeholder{
+             color: rgb(71, 69, 69);
+         }
+         
+         button{
+             width: 100%;
+             color:#fff;
+             background-color: #000;
+             border: none;
+             outline: none;
+             padding:11px 10px 11px 10px;
+             border-radius:20px;
+             cursor: pointer;
+             font-family: $montserrat;
+         }
+     }
+     .contact-info{
+         background-color:#000;
+         height:300px;
+         color: rgb(192, 183, 183);
+         display: grid;
+         align-items: center;
+         padding-left: 25px;
+         border-radius: 20px;
+         h2{
+             font-family: $montserrat;
+         }
+         
+
+         .icons{
+             font-size:36px;
+             margin-right: 10px;
+             
+         }
+     }
+
+}
+
+@media only screen and (max-width: 880px){
+        #contact{
+            place-items: center;
+            height:auto;
+            grid-template-areas: 
+            "box1 box1"
+            "box2 box2 " ;
+            .contact-input{
+                padding-left: 0px;
+            }
+        }
+        .contact-input{
+            grid-area: box1;
+        }
+        .contact-info{
+            grid-area: box2;
+            margin-bottom: 50px;
+            padding-right: 30px;
+            padding-left:30px;
+        
+        }
+}

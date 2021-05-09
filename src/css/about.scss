@@ -1,0 +1,89 @@
+@import './colors';
+/* Montserrat font*/
+
+
+#AboutPage{
+    background-color: $mainBackgroundColor;
+    height:auto;
+    
+}
+.about-header{
+    display:grid;
+    place-items: center;
+    padding-top:70px;
+    h1{
+        font-family: $montserrat;
+    }
+   
+   
+}
+
+.dash{
+    border: 2px solid  rgb(15, 4, 4);
+    width: 130px;
+    height: 0px;
+
+}
+.about-content{
+    padding-top:100px;
+    display:grid;
+    align-items: center;
+    text-align: center;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap:20px;
+    padding-bottom: 50px;
+    .info-title{
+        background-color: #000;
+        color:#fff;
+        height:300px;
+        width:300px;
+        display:grid;
+        place-items: center;
+        border-radius:300px;
+        h2{
+            font-size:50px;
+            em{
+                color:$mainBackgroundColor;
+                font-size: 80px;
+            }
+        }
+    }
+    .info-card{
+        display:grid;
+        place-items: center;
+        p{
+            font-family: $montserrat;
+            font-size:18px;
+        }
+    }
+
+}
+
+@media only screen and (max-width:768px){
+    .about-content{
+        place-items: center;
+        grid-template-areas:
+        "box1 box1"
+        "box2 box2"
+        "box4 box4"
+        "box3 box3";
+    }
+    .cn-1{
+        grid-area:box1;
+
+    }
+    .cn-2{
+        grid-area:box2;
+
+    }
+    .cn-3{
+        grid-area:box3;
+
+    }
+    .cn-4{
+        grid-area:box4;
+
+    }
+}
+

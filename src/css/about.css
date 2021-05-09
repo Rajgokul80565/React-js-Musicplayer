@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+/*linear-gradient(to bottom right,#fff,#eac8af,#fff) ;*/
+/* Montserrat font*/
+#AboutPage {
+  background-color: #E7AB33;
+  height: auto;
+}
+
+.about-header {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding-top: 70px;
+}
+
+.about-header h1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.dash {
+  border: 2px solid #0f0404;
+  width: 130px;
+  height: 0px;
+}
+
+.about-content {
+  padding-top: 100px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  place-items: center;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 20px;
+  padding-bottom: 50px;
+}
+
+.about-content .info-title {
+  background-color: #000;
+  color: #fff;
+  height: 300px;
+  width: 300px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border-radius: 300px;
+}
+
+.about-content .info-title h2 {
+  font-size: 50px;
+}
+
+.about-content .info-title h2 em {
+  color: #E7AB33;
+  font-size: 80px;
+}
+
+.about-content .info-card {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.about-content .info-card p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-content {
+    place-items: center;
+        grid-template-areas: "box1 box1" "box2 box2" "box4 box4" "box3 box3";
+  }
+  .cn-1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: box1;
+  }
+  .cn-2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: box2;
+  }
+  .cn-3 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: box3;
+  }
+  .cn-4 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: box4;
+  }
+}
+/*# sourceMappingURL=about.css.map */

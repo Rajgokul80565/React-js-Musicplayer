@@ -34,18 +34,20 @@
             align-items: center;
             padding-top: 20px;
             padding-right: 30px;
-            a{
+            a {
                 
                 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 font-size: 15px;
-               
+                padding-bottom: 30px;
+                cursor: pointer;
                 text-decoration: none;
                 margin-left: auto;
                 color:#000;
+                a:hover{
+                    color: rgb(126, 114, 114);
+                }
             }
-            a:hover{
-                color: rgb(71, 60, 60);
-            }
+            
         } 
         
         

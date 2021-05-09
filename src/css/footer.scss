@@ -1,0 +1,11 @@
+@import './colors';
+
+#footer{
+  background-color: #000;
+ color: $mainBackgroundColor;
+  display: grid;
+  place-items: center;
+  height: 70px;
+  width: 100%;
+  
+}

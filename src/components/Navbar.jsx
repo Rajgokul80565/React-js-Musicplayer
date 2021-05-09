@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import '../css/navbar.css';
 import burgerMenu from '../images/BurgerMenu.png' ;
 import xMenu from '../images/xIcon.png';
+import {Link} from 'react-router-dom';
+
 
 export default function Navbar() {
 
@@ -15,13 +17,22 @@ export default function Navbar() {
     return (
         <div className = "Navbar">
             <div className = "leftside">
-                <a href="">Myplayees</a>
+                <Link to = "/">
+                    <a href="">Myplayees</a>
+                </Link>
             </div>
             <div className = "rightside">
             <div className = "links" id = {navState ? "hidden" : ""}>
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Contact</a>
+                <Link  to = "/">
+                    <a onClick={collapse} > Home</a>
+                </Link>
+               
+                <Link to = "/about">
+                    <a onClick={collapse}  > About</a>
+                </Link>
+                <Link to = "/contact">
+                    <a onClick={collapse}  > Contact</a>
+                </Link>
             </div>
             </div>
             <button onClick={collapse} >
